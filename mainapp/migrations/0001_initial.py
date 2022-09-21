@@ -52,6 +52,7 @@ class Migration(migrations.Migration):
                 ('deleted', models.BooleanField(default=False)),
                 ('course', models.ForeignKey(on_delete=django.db.models.deletion.CASCADE, to='mainapp.courses')),
             ],
+
             options={
                 'ordering': ('course', 'num'),
             },
